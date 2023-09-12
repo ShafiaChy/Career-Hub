@@ -16,7 +16,7 @@ const FeaturedJob = ({details}) => {
             <h2>{details.location}</h2>
             <h2>Salary: {details.salary}</h2>
            </div>
-           <Link to={`details/${details.id}`}><Button title='View Details'></Button></Link>
+           <Link className='flex mt-24' to={`/details/${details.id}`}><Button title='View Details'></Button></Link>
         </div>
     );
 };

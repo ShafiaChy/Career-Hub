@@ -16,7 +16,7 @@ const JobListing = () => {
     const handleJobPositions = jobPositionType =>{
         console.log(jobPositionType)
         const jobLocationData = details.filter(job => job.remote_or_onsite == jobPositionType && storedCart.includes(job.id))
-        
+        console.log(jobLocationData)
         setJobs(jobLocationData)
     }
 
@@ -44,7 +44,7 @@ const JobListing = () => {
         <div>
             <Banner2 title='Job Listing'></Banner2>
             <JobFilterSystem handleJobPositions={handleJobPositions}></JobFilterSystem>
-            <div className="mb-44 grid grid-cols-1 gap-10 place-items-center">
+            <div className="mb-44 grid grid-cols-1 md:gap-10 place-items-center">
                 {
                     jobs.map(details=><Jobs details={details} key={details.id}></Jobs>)
                 }

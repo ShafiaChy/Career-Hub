@@ -14,7 +14,7 @@ const Banner = () => {
                     <Button  title='Get Started'></Button>
                 </div>
                </div>
-                <div><img src={Man} alt="" /></div>
+                <div className='mt-52 md:mt-0'><img src={Man} alt="" /></div>
             </div>
         </div>
     );

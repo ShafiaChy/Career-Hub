@@ -20,7 +20,7 @@ const FeaturedJobs = () => {
     }
     return (
         <div className="md:px-24">
-            <div className="px-5 md:px-0 text-center my-20">
+            <div className="mt-[600px] md:mt-0 px-5 md:px-0 text-center my-20">
                 <Title details={details} ></Title>
             </div>
             <div className="grid md:grid-cols-2 gap-x-2 gap-y-5 place-items-center">
