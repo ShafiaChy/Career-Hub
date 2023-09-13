@@ -6,7 +6,7 @@ import Jobs from "./Jobs";
 import JobFilterSystem from "./JobFilterSystem";
 
 
-const JobListing = () => {
+const AppliedJobs = () => {
 
     const details = useLoaderData();
     const storedCart = getStoredCart();
@@ -42,7 +42,7 @@ const JobListing = () => {
 
     return (
         <div className="overflow-x-hidden">
-            <Banner2 title='Job Listing'></Banner2>
+            <Banner2 title='Applied Jobs'></Banner2>
 
             {/* component for filtering */}
 
@@ -57,4 +57,4 @@ const JobListing = () => {
     );
 };
 
-export default JobListing;
+export default AppliedJobs;

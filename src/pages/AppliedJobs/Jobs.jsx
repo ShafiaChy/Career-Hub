@@ -15,7 +15,7 @@ const Jobs = ({details}) => {
                 <button className='rounded-md px-3 py-1 bg-transparent border-2 border-[#7E90FE] text-[#7E90FE]'>{details.remote_or_onsite}</button>
                 <button className='rounded-md px-3 py-1  bg-transparent border-2 border-[#7E90FE] text-[#7E90FE]'>{details.job_type}</button>
             </div>
-            <div className='flex-col md:flex-row space-x-4'>
+            <div className='flex-col md:flex-row '>
                 <h2>{details.location}</h2>
                 <h2>Salary:{details.salary}</h2>
             </div>
