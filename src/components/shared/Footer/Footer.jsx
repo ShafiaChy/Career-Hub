@@ -1,13 +1,18 @@
+import { FaFacebook } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
 
-
+//https://daisyui.com/components/footer/
+//Two footer
 const Footer = () => {
     return (
 
         <div>
-           <footer className="grid grid-cols-2 footer py-12 px-12 md:px-24 place-items-center bg-black ">
+           <footer className="footer py-12 px-12 md:px-24 place-items-center bg-black ">
                 <nav>
                     <header className="text-2xl font-bold text-white">CareerHub</header> 
                     <p className="md:w-64 text-gray-400">There are many variations of passages of Lorem Ipsum , but the majority have suffered alteration in some form.</p>
+                    <div className="flex justify-between w-5/12 text-2xl text-white"><FaFacebook/><FaTwitter/><FaSquareInstagram/></div>
                 </nav> 
                 <nav>
                     <header className="text-white">Company</header> 
@@ -30,7 +35,7 @@ const Footer = () => {
                     <a className="link link-hover text-gray-400">Become a Partner</a> 
                     <a className="link link-hover text-gray-400">Developers</a>
                 </nav> 
-                <nav>
+                <nav >
                     <header className="text-white">Contact</header> 
                     <a className="link link-hover text-gray-400">524 Broadway , NYC </a> 
                     <a className="link link-hover text-gray-400">+1 777 - 978 - 5570</a> 

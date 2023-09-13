@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types'
 import Button from "../../components/shared/Button/Button";
+
+
 const Jobs = ({details}) => {
-    
     return (
       
         <div className='w-9/12 flex-col md:flex-row justify-between items-center px-12 py-7  border-2 border-gray-200'>

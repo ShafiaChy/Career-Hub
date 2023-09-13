@@ -7,24 +7,24 @@ import JobFilterSystem from "./JobFilterSystem";
 
 
 const JobListing = () => {
+    
     const details = useLoaderData();
-   
     const storedCart = getStoredCart();
     const [jobs, setJobs] = useState(details);
     
     
+    //filter by remote or onsite
     const handleJobPositions = jobPositionType =>{
-        console.log(jobPositionType)
+     
         const jobLocationData = details.filter(job => job.remote_or_onsite == jobPositionType && storedCart.includes(job.id))
-        console.log(jobLocationData)
+       
         setJobs(jobLocationData)
     }
 
+    //load applied jobs from local storage
     useEffect(() => {
         
         if (jobs.length) {
-          
-          
             const savedCart = [];
             for(const id of storedCart){
                 console.log(id);
@@ -43,7 +43,11 @@ const JobListing = () => {
     return (
         <div>
             <Banner2 title='Job Listing'></Banner2>
+
+            {/* component for filtering */}
+
             <JobFilterSystem handleJobPositions={handleJobPositions}></JobFilterSystem>
+
             <div className="mb-44 grid grid-cols-1 md:gap-10 place-items-center">
                 {
                     jobs.map(details=><Jobs details={details} key={details.id}></Jobs>)

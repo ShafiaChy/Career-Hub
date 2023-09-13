@@ -1,3 +1,5 @@
 .banner-image{
-    background-image: url('../../../assets/others/Rectangle\ 1.png');
+    background-image: url('../../../assets/others/Vector.png');
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
 }
