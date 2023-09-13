@@ -6,7 +6,7 @@ import Button from "../../components/shared/Button/Button";
 const Jobs = ({details}) => {
     return (
       
-        <div className='w-9/12 flex-col md:flex-row justify-between items-center px-12 py-7  border-2 border-gray-200'>
+        <div className='w-9/12 flex flex-col md:flex-row justify-between items-center px-12 py-7  border-2 border-gray-200'>
            <div className="space-y-4">
             <img className='w-40' src={details.logo} alt="" /> 
             <h1 className='text-xl font-bold'>{details.job_title}</h1>
