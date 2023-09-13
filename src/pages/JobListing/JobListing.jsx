@@ -7,7 +7,7 @@ import JobFilterSystem from "./JobFilterSystem";
 
 
 const JobListing = () => {
-    
+
     const details = useLoaderData();
     const storedCart = getStoredCart();
     const [jobs, setJobs] = useState(details);
@@ -41,14 +41,14 @@ const JobListing = () => {
     }, [details])
 
     return (
-        <div>
+        <div className="overflow-x-hidden">
             <Banner2 title='Job Listing'></Banner2>
 
             {/* component for filtering */}
 
             <JobFilterSystem handleJobPositions={handleJobPositions}></JobFilterSystem>
 
-            <div className="mb-44 grid grid-cols-1 md:gap-10 place-items-center">
+            <div className="mb-44 grid grid-cols-1 gap-y-4 md:gap-10 place-items-center">
                 {
                     jobs.map(details=><Jobs details={details} key={details.id}></Jobs>)
                 }

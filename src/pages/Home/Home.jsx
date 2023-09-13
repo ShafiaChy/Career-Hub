@@ -7,7 +7,7 @@ import FeaturedJobs from "../../components/Home/FeaturedJobs/FeaturedJobs";
 
 const Home = () => {
     return (
-        <div>
+        <div className="overflow-x-hidden">
            <Banner></Banner>
            <Categories></Categories>
            <FeaturedJobs></FeaturedJobs>
