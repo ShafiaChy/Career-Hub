@@ -11,14 +11,16 @@ const AppliedJobs = () => {
     const details = useLoaderData();
     const storedCart = getStoredCart();
     const [jobs, setJobs] = useState(details);
+    const [filteredJobs, setFilteredJobs] = useState(details);
+   
     
     
     //filter by remote or onsite
     const handleJobPositions = jobPositionType =>{
      
-        const jobLocationData = details.filter(job => job.remote_or_onsite == jobPositionType && storedCart.includes(job.id))
-       
-        setJobs(jobLocationData)
+        const jobLocationData = jobs.filter(job => job.remote_or_onsite == jobPositionType)
+        console.log(jobLocationData)
+        setFilteredJobs(jobLocationData)
     }
 
     //load applied jobs from local storage
@@ -27,14 +29,13 @@ const AppliedJobs = () => {
         if (jobs.length) {
             const savedCart = [];
             for(const id of storedCart){
-                console.log(id);
-                const appliedJob = jobs.find(job => job.id === id);
+            
+                const appliedJob = details.find(job => job.id === id);
                 if(appliedJob){
                     savedCart.push(appliedJob)
                 }
             }
 
-            console.log('saved cart', savedCart)
             setJobs(savedCart);
 
         }
@@ -50,7 +51,8 @@ const AppliedJobs = () => {
 
             <div className="mb-44 grid grid-cols-1 gap-y-4 md:gap-10 place-items-center">
                 {
-                    jobs.map(details=><Jobs details={details} key={details.id}></Jobs>)
+                    filteredJobs.length? filteredJobs.map((details,idx)=><Jobs details={details} key={idx}></Jobs>):
+                    jobs.map((details,idx)=><Jobs details={details} key={idx}></Jobs>)
                 }
             </div>
         </div>
