@@ -1,8 +1,12 @@
-# React + Vite
+# [CareerHub](https://worthless-trail-careerhub.surge.sh/) - used frameworks, packages, technologies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React icons](https://react-icons.github.io/react-icons/)
+- Implemented react router dom (https://reactrouter.com/)
+- DaisyUI for Navbar, Footer and dropdown menu (https://daisyui.com/)
+- Stored the id of the applied jobs in local storage
+- Created custom hook, useLoadData, to fetch data
+- Filter system
+- Dynamic page - title on the banner will changed based on the route
+- Handling 404 on reload - (https://medium.com/superhighfives/serving-client-side-routing-with-surge-sh-7b705542cf3)

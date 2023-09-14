@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 
+// https://daisyui.com/components/dropdown/
+// # Dropdown / aligns to end
 const JobFilterSystem = ({handleJobPositions}) => {
     return (
         <div className="mt-24 mb-5 flex justify-end px-48">
