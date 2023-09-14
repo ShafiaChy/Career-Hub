@@ -11,7 +11,7 @@ const AppliedJobs = () => {
     const details = useLoaderData();
     const storedCart = getStoredCart();
     const [jobs, setJobs] = useState(details);
-    const [filteredJobs, setFilteredJobs] = useState(details);
+    const [filteredJobs, setFilteredJobs] = useState([]);
    
     
     
