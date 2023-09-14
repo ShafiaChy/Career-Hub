@@ -9,4 +9,4 @@
 - Created custom hook, useLoadData, to fetch data
 - Filter system
 - Dynamic page - title on the banner will changed based on the route
-- [Handling 404 on reload](https://stackoverflow.com/questions/43855529/surge-deployed-react-app-getting-404-page-not-found)
+- [Deployed on Surge and handle 404 on reload](https://stackoverflow.com/questions/43855529/surge-deployed-react-app-getting-404-page-not-found)
