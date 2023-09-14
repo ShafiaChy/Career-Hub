@@ -7,6 +7,8 @@ import { FaPhone } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -23,9 +25,11 @@ const JobDetails = () => {
         const newCart = [...cart, data];
         setCart(newCart);
         addToLS(data[0].id);
+        toast.success("Job Application successful!!!");
     }
     return (
         <div >
+            <ToastContainer></ToastContainer>
            <Banner2 title="Job Details"></Banner2> 
 
            <div className="grid md:grid-cols-4 gap-4 my-24 md:px-14">
