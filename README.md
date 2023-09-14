@@ -1,4 +1,4 @@
-# [CareerHub](yummy-van-careerhub.surge.sh) - used frameworks, packages, technologies
+# [CareerHub](https://yummy-van-careerhub.surge.sh/) - used frameworks, packages, technologies
 
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
