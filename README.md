@@ -1,4 +1,4 @@
-# [CareerHub](https://awesome-wrench-careerhub.surge.sh/) - used frameworks, packages, technologies
+# [CareerHub](https://like-partner-careerhub.surge.sh/) - used frameworks, packages, technologies
 
 - [Vite](https://vitejs.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
